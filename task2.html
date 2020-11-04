@@ -7,7 +7,10 @@
 </head>
 <body>
     <h1>User Registration Form </h1>
-     <form action=""> 
+     <form name="details" action="./task2.html" method="POST"> 
+         <fieldset>
+             <legend>Personal Details</legend>
+             <br>
        <label>Full Name:</label>
         <input type="text">
         <br>
@@ -25,14 +28,17 @@
         <br>
         <label>Age:</label>
         <input type="number">
-        <br>
-        <p style="display:inline">Company:</p>
+          </fieldset>
+          <fieldset>
+              <legend>Company Details</legend>
+              <p>Company:</p>      
         <input type="radio" id='RE' name="Company">
         <label for="RE">Raw Engineering</label>
         <input type="radio" id='CS' name="Company">
         <label for="CS">Contentstack</label>
-        <br>
+          </fieldset>
         <button>Submit</button>
+        <button>Reset</button>
     </form>
     
 </body>
